@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 反馈按钮点击事件
     feedbackButton.addEventListener('click', () => {
-        window.open('https://github.com/your-repo/issues', '_blank');
+        window.open('https://github.com/Uynaity/HCSPE/issues', '_blank');
     });
 
     // RIC选课平台按钮点击事件
