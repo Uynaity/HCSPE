@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "HCSPE",
+    "version": "1.0",
+    "description": "在HKU Class Schedule Planner中一键跳转到RIC选课平台",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://class-planner.hku.hk/*",
+        "https://github.com/*",
+        "https://richku.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://class-planner.hku.hk/app"],
+            "js": ["content.js"]
+        }
+    ]
+}
