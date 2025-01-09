@@ -4,17 +4,16 @@
     "version": "1.0",
     "description": "在HKU Class Schedule Planner中一键跳转到RIC选课平台",
     "permissions": [
-        "activeTab",
-        "scripting",
         "storage"
     ],
     "host_permissions": [
-        "https://class-planner.hku.hk/*",
-        "https://github.com/*",
-        "https://richku.com/*"
+        "https://class-planner.hku.hk/*"
     ],
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon": {
+            "192": "images/192.png"
+        }
     },
     "content_scripts": [
         {
